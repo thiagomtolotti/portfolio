@@ -91,7 +91,7 @@ export default function RootLayout({
           <header className="pt-8 md:pt-16 pb-16 px-4 md:px-0 flex justify-between">
             <Link href="/">
               <h1 className="text-base font-mono font-semibold text-slate-950">
-                ap
+                tt
               </h1>
             </Link>
             <nav className="flex gap-4">
@@ -118,7 +118,8 @@ export default function RootLayout({
           {children}
           <footer className="px-4 md:px-0 border-t border-slate-200 py-8 text-slate-700 font-mono text-xs tracking-tight flex justify-between">
             <p>
-              &copy; 2010 - {new Date().getFullYear()} {'/'} Alex Pate
+              &copy; 2019 - {new Date().getFullYear()} {'/'} Thiago Tolotti
+              (Based on Alex Pate’s work)
             </p>
             <p>
               <Link href="https://github.com/alexpate/www">View Source</Link>

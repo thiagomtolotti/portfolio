@@ -50,16 +50,16 @@ export default async function Home() {
     <main className="px-4 md:px-0">
       <section className="pb-14 border-b border-slate-300 mb-14">
         <h1 className="font-semibold text-4xl mb-4 text-slate-950">
-          Ciao, I’m Alex.
+          Hello, I’m Thiago Tolotti.
           <span className="block text-slate-500 font-normal text-2xl">
-            A product engineer from the UK based in Milan.
+            An italo-brazilian developer based in Brazil.
           </span>
         </h1>
         <p className="text-slate-700 text-lg md:text-xl leading-normal">
-          I work with leading-edge companies to create exceptional products. I
-          most recently worked with MoonPay to help make web3 accessible. Before
-          that, I built personal and business banking products for millions of
-          customers at Monzo.
+          I’m passionate for developing amazing products, always curious to
+          build new things and learn more each day. Currently I’m looking for
+          international positions that allow me to continue learning while also
+          delivering value through my work.
         </p>
         <Link
           href="/info"
@@ -72,7 +72,7 @@ export default async function Home() {
         </Link>
       </section>
 
-      <section className="pb-16">
+      {/* <section className="pb-16">
         <Title as="h2" variant="secondary" className="mb-4">
           Personal Projects
         </Title>
@@ -113,9 +113,9 @@ export default async function Home() {
             );
           })}
         </div>
-      </section>
+      </section> */}
 
-      <section className="pt-10 pb-16">
+      {/* <section className="pt-10 pb-16">
         <Title as="h2" variant="secondary" className="mb-8">
           Recent Writing
         </Title>
@@ -141,7 +141,7 @@ export default async function Home() {
             →
           </span>
         </Link>
-      </section>
+      </section> */}
     </main>
   );
 }
