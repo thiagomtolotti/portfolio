@@ -9,23 +9,23 @@ const contact: {
 }[] = [
   {
     method: 'Email',
-    link: 'mailto:hey@alexpate.com',
-    label: 'hey@alexpate.com',
+    link: 'mailto:thiagotolotti@gmail.com',
+    label: 'thiagotolotti@gmail.com',
   },
-  {
-    method: 'Twitter',
-    link: 'https://twitter.com/alexjpate',
-    label: '@alexjpate',
-  },
+  //   {
+  //     method: 'Twitter',
+  //     link: 'https://twitter.com/alexjpate',
+  //     label: '@alexjpate',
+  //   },
   {
     method: 'GitHub',
-    link: 'https://github.com/alexpate',
-    label: 'git/alexpate',
+    link: 'https://github.com/thiagomtolotti',
+    label: 'git/thiagomtolotti',
   },
   {
     method: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/alexjpate/',
-    label: 'in/alexjpate',
+    link: 'https://www.linkedin.com/in/thiago-tolotti/',
+    label: 'in/thiago-tolotti',
   },
 ];
 export default async function InfoPage() {
@@ -35,8 +35,8 @@ export default async function InfoPage() {
       <section className="pb-8">
         <p className="text-lg mb-4">
           If you&apos;d like to get in touch, you can reach me using the
-          following methods. Please note, that I&apos;m not currently available
-          for freelance projects.
+          following methods. I&apos;m currently available for freelance
+          projects.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -46,7 +46,11 @@ export default async function InfoPage() {
                 <Title as="h2" variant="tertiary">
                   {contactMethod.method}
                 </Title>
-                <Link href={contactMethod.link} className="text-slate-700">
+                <Link
+                  href={contactMethod.link}
+                  className="text-slate-700"
+                  target="_blank"
+                >
                   {contactMethod.label}
                 </Link>
               </div>
