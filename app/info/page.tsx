@@ -10,34 +10,28 @@ const experience: {
   logo: string;
 }[] = [
   {
-    company: 'Mainframe',
-    role: 'Design Engineer',
-    date: 'November 2024 → Present',
-    logo: '/mainframe-logo.jpg',
+    company: 'Riole',
+    role: 'Frontend Developer',
+    date: 'April 2023 → Present',
+    logo: '/riole.png',
   },
   {
-    company: 'MoonPay',
-    role: 'Senior Front-End Engineer',
-    date: 'April 2022 → August 2024',
-    logo: '/moonpay-logo.jpg',
+    company: 'TRE-PR',
+    role: 'Graphic/Web Designer',
+    date: 'March 2020 → January 2023',
+    logo: '/tre_pr.jpg',
   },
   {
-    company: 'Monzo',
-    role: 'Web Engineer / Product Designer',
-    date: 'May 2019 → November 2021',
-    logo: '/monzo-logo.png',
+    company: 'Placrim',
+    role: 'Graphic Design Intern',
+    date: 'October 2019 → February 2020',
+    logo: '/placrim.jpg',
   },
   {
-    company: 'Kalo',
-    role: 'UI Engineer',
-    date: 'February 2017 → May 2019',
-    logo: '/kalo-logo.jpg',
-  },
-  {
-    company: 'Pusher',
-    role: 'Front-end Developer',
-    date: 'September 2015 → January 2017',
-    logo: '/pusher-logo.jpg',
+    company: 'Mondial ID',
+    role: 'Graphic Design Intern',
+    date: 'March 2019 → October 2019',
+    logo: '/mondial_id.jpg',
   },
 ];
 
@@ -46,7 +40,8 @@ export default async function InfoPage() {
     <main className="px-4 md:px-0">
       <PageHeader title="Information" />
       <section className="pb-8 prose prose-lg">
-        <p>
+        <p>In progress...</p>
+        {/* <p>
           Hi there, I&apos;m Alex. I build my own products, along side working
           with some amazing companies to help them build theirs.
         </p>
@@ -76,7 +71,7 @@ export default async function InfoPage() {
           If you&apos;re interested in working together, feel free to reach out
           to me here:{' '}
           <Link href="mailto:hey@alexpate.com">hey@alexpate.com</Link>.
-        </p>
+        </p> */}
       </section>
 
       <section>
