@@ -1,45 +1,44 @@
 import Link from 'next/link';
 // import { ReactElement } from 'react';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 // import { ArticleLink } from './components/article-link';
-// import clsx from 'clsx';
+import clsx from 'clsx';
 // import { getAllPosts } from '@/lib/articles';
-// import { Title } from '@/app/components/title';
+import { Title } from '@/app/components/title';
 
-// const projects: {
-//   href?: string;
-//   title: string;
-//   description: string;
-//   image: string;
-// }[] = [
-//   {
-//     title: 'Hystruct',
-//     href: 'https://www.hystruct.com',
-//     description: 'Scrape structured data from the web with AI',
-//     image: '/hystruct.png',
-//   },
-//   {
-//     title: 'Glow',
-//     href: 'https://glow.as',
-//     description:
-//       'A super simple way to create beautiful personal landing pages.',
-//     image: '/glow.png',
-//   },
-//   {
-//     title: 'FlagDB',
-//     href: 'https://flagdb.com',
-//     description:
-//       'A personal project to build a database of flags from around the world',
-//     image: '/flagdb.png',
-//   },
-//   {
-//     href: 'https://github.com/alexpate/awesome-design-systems',
-//     title: 'Awesome Design Systems',
-//     description: 'A curated list of design systems',
-//     image: '/awesome-design-systems.png',
-//   },
-// ];
+const projects: {
+  href?: string;
+  title: string;
+  description: string;
+  image: string;
+}[] = [
+  {
+    title: 'Finances Web App',
+    href: 'https://financas.thiagotolotti.com',
+    description:
+      "SaaS app to manage small businesses's finances. Fullstack development and management.",
+    image: '/projects/financas.png',
+  },
+  {
+    title: 'Auth Microservice',
+    href: 'https://github.com/thiagomtolotti-financas/auth-microservice',
+    description: 'Handles authorization requests',
+    image: '/projects/auth-microservice.png',
+  },
+  {
+    title: 'Termo (Wordle) Clone',
+    href: 'https://termo.thiagotolotti.com',
+    description: 'Clone of Termo (a game similar to Wordle in PT-BR).',
+    image: '/projects/termo.png',
+  },
+  {
+    title: 'Website for local business',
+    href: 'https://www.santocrepe.com',
+    description: 'Website design and code for small local business.',
+    image: '/projects/santo-crepe.png',
+  },
+];
 
 export default async function Home() {
   //   const posts = await getAllPosts({
@@ -74,7 +73,7 @@ export default async function Home() {
         </Link>
       </section>
 
-      {/* <section>
+      <section>
         <Title as="h2" variant="secondary" className="mb-4">
           Personal Projects
         </Title>
@@ -94,6 +93,7 @@ export default async function Home() {
                 className={clsx(
                   'flex flex-col justify-center bg-slate-100 hover:bg-slate-200/70 transition-colors rounded-xl p-8'
                 )}
+                target="_blank"
               >
                 <div className="relative rounded-xl mb-4 shadow-project">
                   <Image
@@ -108,14 +108,14 @@ export default async function Home() {
                 <h3 className="text-slate-700 font-semibold tracking-tight text-xl">
                   {project.title}
                 </h3>
-                <h3 className="text-slate-500 text-base">
+                <h3 className="text-slate-500 text-base mt-2">
                   {project.description}
                 </h3>
               </WrappingComponent>
             );
           })}
         </div>
-      </section> */}
+      </section>
 
       {/* <section className="pt-10 pb-16">
         <Title as="h2" variant="secondary" className="mb-8">
