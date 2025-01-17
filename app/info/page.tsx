@@ -8,30 +8,46 @@ const experience: {
   role: string;
   date: string;
   logo: string;
+  description: string[];
 }[] = [
   {
     company: 'Riole',
-    role: 'Frontend Developer',
+    role: 'UX Designer / Frontend Developer',
     date: 'April 2023 → Present',
     logo: '/riole.png',
+    description: [
+      `Initially hired as a UI/UX designer, I quickly saw the necessity and opportunity to take on the frontend development of my team. This opportunity led me to learn a lot, gain confidence in turning layouts into code while also improving my design skills.`,
+      'In April 2024 I was promoted to mid-level frontend developer, officially assuming the frontend development as my main role, while also still making some UX tasks and supervising a Junior designer in UI tasks.',
+      'While in Riole I worked in 2 main projects, a videoconference web application for legislative chambers and a legislative process manager (ERP). Acting as a frontend developer and UX designer in both.',
+    ],
   },
   {
     company: 'TRE-PR',
     role: 'Graphic/Web Designer',
     date: 'March 2020 → January 2023',
     logo: '/tre_pr.jpg',
+    description: [
+      'As a designer in a public agency I had a lot of freedom to explore my areas of interest, it was at that moment that I started to study web development and UI/UX design.',
+      "In the position, my main demands involved maintaining the Court's visual identity, creating various layouts for social medias, internal materials, hotsites and landing pages.",
+    ],
   },
   {
     company: 'Placrim',
     role: 'Graphic Design Intern',
     date: 'October 2019 → February 2020',
     logo: '/placrim.jpg',
+    description: [
+      'My internships provided me with the basis to be the professional I am today. In these opportunities I learned how to use the main softwares of the area, work quickly and efficiently to deliver my demands, improve my communication skills with my coleagues and superiors and the details of the dynamics of the office environment.',
+    ],
   },
   {
     company: 'Mondial ID',
     role: 'Graphic Design Intern',
     date: 'March 2019 → October 2019',
     logo: '/mondial_id.jpg',
+    description: [
+      'My internships provided me with the basis to be the professional I am today. In these opportunities I learned how to use the main softwares of the area, work quickly and efficiently to deliver my demands, improve my communication skills with my coleagues and superiors and the details of the dynamics of the office environment.',
+    ],
   },
 ];
 
@@ -39,9 +55,9 @@ export default async function InfoPage() {
   return (
     <main className="px-4 md:px-0">
       <PageHeader title="Information" />
-      <section className="pb-8 prose prose-lg">
+      {/*<section className="pb-8 prose prose-lg">
         <p>In progress....</p>
-        {/* <p>
+         <p>
           Hi there, I&apos;m Alex. I build my own products, along side working
           with some amazing companies to help them build theirs.
         </p>
@@ -71,8 +87,8 @@ export default async function InfoPage() {
           If you&apos;re interested in working together, feel free to reach out
           to me here:{' '}
           <Link href="mailto:hey@alexpate.com">hey@alexpate.com</Link>.
-        </p> */}
-      </section>
+        </p> 
+      </section>*/}
 
       <section>
         <Title as="h2" variant="secondary" className="mb-4 mt-8 ">
@@ -97,6 +113,11 @@ export default async function InfoPage() {
                   <span className="text-slate-700 text-lg">{exp.role}</span>
                   <span className="block mt-4 text-slate-500 col-span-2 text-sm font-medium tracking-tighter font-mono">
                     {exp.date}
+                  </span>
+                  <span className="mt-4 text-slate-800 flex flex-col gap-4">
+                    {exp.description?.map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
                   </span>
                 </div>
               </div>
