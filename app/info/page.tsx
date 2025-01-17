@@ -40,7 +40,7 @@ export default async function InfoPage() {
     <main className="px-4 md:px-0">
       <PageHeader title="Information" />
       <section className="pb-8 prose prose-lg">
-        <p>In progress...</p>
+        <p>In progress....</p>
         {/* <p>
           Hi there, I&apos;m Alex. I build my own products, along side working
           with some amazing companies to help them build theirs.
