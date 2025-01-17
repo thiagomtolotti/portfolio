@@ -2,13 +2,13 @@ import './assets/globals.css';
 
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 import localFont from 'next/font/local';
 import { JetBrains_Mono } from 'next/font/google';
-import { GoogleAnalytics } from '@next/third-parties/google';
+// import { GoogleAnalytics } from '@next/third-parties/google';
 
 import clsx from 'clsx';
-import Script from 'next/script';
+// import Script from 'next/script';
 
 const SaansFont = localFont({
   src: './saans-font.woff2',
@@ -113,7 +113,9 @@ export default function RootLayout({
               </Link>
             </nav>
           </header>
+
           {children}
+
           <footer className="px-4 md:px-0 border-t border-slate-200 py-8 text-slate-700 font-mono text-xs tracking-tight flex justify-between">
             <p>
               &copy; 2019 - {new Date().getFullYear()} {'/'} Thiago Tolotti
@@ -129,8 +131,9 @@ export default function RootLayout({
             </p>
           </footer>
         </div>
-        <Analytics />
-        <GoogleAnalytics gaId="G-NRKQPP7M9P" />
+
+        {/* <Analytics /> */}
+        {/* <GoogleAnalytics gaId="G-NRKQPP7M9P" /> */}
       </body>
     </html>
   );
