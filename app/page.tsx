@@ -1,66 +1,68 @@
 import Link from 'next/link';
-import { ReactElement } from 'react';
-import Image from 'next/image';
+// import { ReactElement } from 'react';
+// import Image from 'next/image';
 
-import { ArticleLink } from './components/article-link';
-import clsx from 'clsx';
-import { getAllPosts } from '@/lib/articles';
-import { Title } from '@/app/components/title';
+// import { ArticleLink } from './components/article-link';
+// import clsx from 'clsx';
+// import { getAllPosts } from '@/lib/articles';
+// import { Title } from '@/app/components/title';
 
-const projects: {
-  href?: string;
-  title: string;
-  description: string;
-  image: string;
-}[] = [
-  {
-    title: 'Hystruct',
-    href: 'https://www.hystruct.com',
-    description: 'Scrape structured data from the web with AI',
-    image: '/hystruct.png',
-  },
-  {
-    title: 'Glow',
-    href: 'https://glow.as',
-    description:
-      'A super simple way to create beautiful personal landing pages.',
-    image: '/glow.png',
-  },
-  {
-    title: 'FlagDB',
-    href: 'https://flagdb.com',
-    description:
-      'A personal project to build a database of flags from around the world',
-    image: '/flagdb.png',
-  },
-  {
-    href: 'https://github.com/alexpate/awesome-design-systems',
-    title: 'Awesome Design Systems',
-    description: 'A curated list of design systems',
-    image: '/awesome-design-systems.png',
-  },
-];
+// const projects: {
+//   href?: string;
+//   title: string;
+//   description: string;
+//   image: string;
+// }[] = [
+//   {
+//     title: 'Hystruct',
+//     href: 'https://www.hystruct.com',
+//     description: 'Scrape structured data from the web with AI',
+//     image: '/hystruct.png',
+//   },
+//   {
+//     title: 'Glow',
+//     href: 'https://glow.as',
+//     description:
+//       'A super simple way to create beautiful personal landing pages.',
+//     image: '/glow.png',
+//   },
+//   {
+//     title: 'FlagDB',
+//     href: 'https://flagdb.com',
+//     description:
+//       'A personal project to build a database of flags from around the world',
+//     image: '/flagdb.png',
+//   },
+//   {
+//     href: 'https://github.com/alexpate/awesome-design-systems',
+//     title: 'Awesome Design Systems',
+//     description: 'A curated list of design systems',
+//     image: '/awesome-design-systems.png',
+//   },
+// ];
 
 export default async function Home() {
-  const posts = await getAllPosts({
-    includeDrafts: process.env.NODE_ENV === 'development',
-  });
+  //   const posts = await getAllPosts({
+  //     includeDrafts: process.env.NODE_ENV === 'development',
+  //   });
 
   return (
-    <main className="px-4 md:px-0">
-      <section className="pb-14 border-b border-slate-300 mb-14">
+    <main className="px-4 md:px-0 divide-y divide-slate-300 [&>section]:py-14">
+      <section className="!pt-0">
         <h1 className="font-semibold text-4xl mb-4 text-slate-950">
-          Hello, I’m Thiago Tolotti.
-          <span className="block text-slate-500 font-normal text-2xl">
+          Hello, I&apos;m Thiago Tolotti.
+          <span className="block text-slate-500 font-normal text-2xl mt-1.5">
             An italo-brazilian developer based in Brazil.
           </span>
         </h1>
+
         <p className="text-slate-700 text-lg md:text-xl leading-normal">
-          I’m passionate for developing amazing products, always curious to
-          build new things and learn more each day. Currently I’m looking for
-          international positions that allow me to continue learning while also
-          delivering value through my work.
+          I&apos;m passionate about developing amazing products and always
+          curious to build new things while learning more each day. I&apos;m
+          currently seeking for international positions that allow me to
+          continue learning while also delivering value through my work.
         </p>
+
         <Link
           href="/info"
           className="group bg-slate-950 hover:bg-slate-800 transition-colors inline-block mt-8 font-mono text-xs font-semibold rounded-full px-8 py-3 text-white"
@@ -72,7 +74,7 @@ export default async function Home() {
         </Link>
       </section>
 
-      {/* <section className="pb-16">
+      {/* <section>
         <Title as="h2" variant="secondary" className="mb-4">
           Personal Projects
         </Title>
