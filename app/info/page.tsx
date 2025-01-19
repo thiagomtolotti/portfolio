@@ -56,6 +56,7 @@ export default async function InfoPage() {
     <main className="px-4 md:px-0">
       <PageHeader title="Information" />
       {/*<section className="pb-8 prose prose-lg">
+      {/*<section className="pb-8 prose prose-lg">
         <p>In progress....</p>
          <p>
           Hi there, I&apos;m Alex. I build my own products, along side working
@@ -87,8 +88,21 @@ export default async function InfoPage() {
           If you&apos;re interested in working together, feel free to reach out
           to me here:{' '}
           <Link href="mailto:hey@alexpate.com">hey@alexpate.com</Link>.
-        </p> 
-      </section>*/}
+        </p>
+      </section> */}
+
+      <section>
+        <Title as="h2" variant="secondary" className="mb-4 mt-8 ">
+          Skills & Technologies
+        </Title>
+
+        <p className="text-base">
+          Next.js · React · Redux · Tailwind · Typescript · Javascript · Jest ·
+          CSS · HTML · Git · Vite · Node.js · Express · Docker · Design Patterns
+          · Responsive UI · UX Research · Figma · Illustrator · Photoshop ·
+          Agile · Design Thinking · User testing · User interviews
+        </p>
+      </section>
 
       <section>
         <Title as="h2" variant="secondary" className="mb-4 mt-8 ">
